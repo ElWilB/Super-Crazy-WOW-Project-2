@@ -15,6 +15,10 @@ public class PlayerController : MonoBehaviour
     public InputActionReference moveAction;
     public InputActionReference jumpAction;
 
+    [Header("Animations")]
+    public SpriteRenderer spriteRenderer;
+    public Animator animator; 
+
     private void OnEnable() // This is new input system stuffs
     {
         moveAction.action.Enable();
@@ -58,5 +62,7 @@ public class PlayerController : MonoBehaviour
         // Apply all movement
         Vector3 finalMove = (move * playerSpeed) + (playerVelocity.y * Vector3.up);
         controller.Move(finalMove * Time.deltaTime);
+
+        animator.Play("Walk");
     }
 }

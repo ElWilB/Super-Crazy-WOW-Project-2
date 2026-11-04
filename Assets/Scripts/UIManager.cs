@@ -1,4 +1,5 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class UIManager : MonoBehaviour
@@ -7,6 +8,8 @@ public class UIManager : MonoBehaviour
 
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI liveText;
+    public TextMeshProUGUI resultText;
+
 
     private void Awake()
     {
@@ -16,5 +19,12 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         UIManager.instance.liveText.text = GameManager.instance.currentLives.ToString();
+        UIManager.instance.scoreText.text = GameManager.instance.goldAmount.ToString();
+
+
+        if (GameManager.instance.goldAmount == 10)
+            UIManager.instance.resultText.text = "      loser";
+        else if (GameManager.instance.goldAmount <= 9)
+            UIManager.instance.resultText.text = "winner alert";
     }
 }
