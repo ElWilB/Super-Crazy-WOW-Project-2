@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.ProBuilder.MeshOperations;
 
 public class PlayerController : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public float playerSpeed = 5.0f;
     public float gravityValue = Physics.gravity.y;
     public float jumpVelocity = 5f;
+    private bool isMoving = false;
 
     public CharacterController controller;
     private Vector3 playerVelocity;
@@ -15,9 +17,11 @@ public class PlayerController : MonoBehaviour
     public InputActionReference moveAction;
     public InputActionReference jumpAction;
 
+    // We define these values as animations the player sprite calls for.
     [Header("Animations")]
     public SpriteRenderer spriteRenderer;
-    public Animator animator; 
+    public Animator animator;
+    private bool isFacingRight;
 
     private void OnEnable() // This is new input system stuffs
     {
@@ -33,10 +37,17 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-
+        isFacingRight = false;
     }
 
     void Update()
+    {
+        UpdateMovement();
+
+        UpdateAnimationStates();
+    }
+
+    void UpdateMovement()
     {
         // Apply gravity
         playerVelocity.y += gravityValue * Time.deltaTime;
@@ -48,6 +59,15 @@ public class PlayerController : MonoBehaviour
 
         // Read input
         Vector2 input = moveAction.action.ReadValue<Vector2>();
+
+        if(input.x > 0)
+        {
+            isFacingRight = false;
+        }
+        else if (input.x < 0)
+        {
+            isFacingRight = true;
+        }
 
         // Convert input to Vector3
         Vector3 move = new Vector3(input.x, 0, 0);
@@ -63,6 +83,30 @@ public class PlayerController : MonoBehaviour
         Vector3 finalMove = (move * playerSpeed) + (playerVelocity.y * Vector3.up);
         controller.Move(finalMove * Time.deltaTime);
 
-        animator.Play("Walk");
+    }
+
+    void UpdateAnimationStates()
+    {
+        if (isFacingRight == true)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else
+        {
+            spriteRenderer.flipX = false;
+        }
+
+
+        if (controller.isGrounded == false)
+            animator.Play("Jump");
+        else if (controller.velocity.magnitude > 0.1f)
+        {
+            animator.Play("Walk");
+        }
+        else
+        {
+            animator.Play("Idle");
+        }
+
     }
 }
