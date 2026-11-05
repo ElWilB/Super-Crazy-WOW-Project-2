@@ -23,8 +23,8 @@ public class UIManager : MonoBehaviour
 
 
         if (GameManager.instance.goldAmount == 10)
-            UIManager.instance.resultText.text = "      loser";
-        else if (GameManager.instance.goldAmount <= 9)
             UIManager.instance.resultText.text = "winner alert";
+        else if (GameManager.instance.goldAmount <= 9)
+            UIManager.instance.resultText.text = "      loser";
     }
 }

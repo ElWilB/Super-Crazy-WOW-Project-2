@@ -7,5 +7,6 @@ public class GoToScene : MonoBehaviour
     {
         SceneManager.LoadScene(index);
         GameManager.instance.currentLives = 1;
+        GameManager.instance.goldAmount = 0;
     }
 }
