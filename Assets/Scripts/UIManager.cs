@@ -19,12 +19,16 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         UIManager.instance.liveText.text = GameManager.instance.currentLives.ToString();
-        UIManager.instance.scoreText.text = GameManager.instance.goldAmount.ToString();
 
 
         if (GameManager.instance.goldAmount == 10)
             UIManager.instance.resultText.text = "winner alert";
         else if (GameManager.instance.goldAmount <= 9)
             UIManager.instance.resultText.text = "      loser";
+    }
+
+    private void Update()
+    {
+        UIManager.instance.scoreText.text = GameManager.instance.goldAmount.ToString();
     }
 }

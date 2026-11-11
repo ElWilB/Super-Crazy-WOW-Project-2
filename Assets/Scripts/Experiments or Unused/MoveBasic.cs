@@ -3,27 +3,73 @@ using System.Collections;
 
 public class MoveTest : MonoBehaviour
 {
-    public Vector3 pointB;
+    // Since we've set up a differing movement method anyway, take the animation controls and wire them in here.
+    [Header("Enemy Animation Attributes")]
+    public CharacterController controller;
+    public SpriteRenderer spriteRenderer;
+    public Animator animator;
+    private bool isFacingRight;
+    private bool enemyWalking;
+    public bool facesRightByDefault;
 
+    public Vector3 pointB;
+    public float timeDelay = 3f;
+    public float moveSpeed = 1.2f;
+
+    private void Update()
+    {
+        UpdateAnimationState();
+    }
+
+    // Since I haven't a clue what this actually does (start a routine to follow?), leave it alone.
+    // Animations can be handled in the IEnumerator since they need to be, but try to minimize alterations.
     IEnumerator Start()
     {
         var pointA = transform.position;
         while (true)
         {
+            enemyWalking = false;
+            yield return new WaitForSeconds(timeDelay);
+            enemyWalking = true;
+            if (spriteRenderer.flipX == true)
+                spriteRenderer.flipX = false;
+            else if (spriteRenderer.flipX == false)
+                spriteRenderer.flipX = true;
             yield return StartCoroutine(MoveObject(transform, pointA, pointB, 3.0f));
+            enemyWalking = false;
+            yield return new WaitForSeconds(timeDelay);
+            enemyWalking = true;
+            if (spriteRenderer.flipX == false)
+                spriteRenderer.flipX = true;
+            else if (spriteRenderer.flipX == true)
+                spriteRenderer.flipX = false;
             yield return StartCoroutine(MoveObject(transform, pointB, pointA, 3.0f));
+            enemyWalking = false;
+
         }
     }
 
     IEnumerator MoveObject(Transform thisTransform, Vector3 startPos, Vector3 endPos, float time)
     {
         var i = 0.0f;
-        var rate = 1.2f / time;
+        var rate = moveSpeed / time;
         while (i < 1.0f)
         {
-            i += Time.deltaTime * rate;
-            thisTransform.position = Vector3.Lerp(startPos, endPos, i);
+                i += Time.deltaTime * rate;
+                thisTransform.position = Vector3.Lerp(startPos, endPos, i);
             yield return null;
         }
+    }
+
+    void UpdateAnimationState()
+    {
+        if (enemyWalking == true)
+            {
+                animator.Play("EnemyWalk");
+            }
+            else
+            {
+                animator.Play("EnemyIdle");
+            }
     }
 }

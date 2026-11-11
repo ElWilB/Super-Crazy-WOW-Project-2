@@ -6,22 +6,22 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
+    path: Assets/Scenes/Menus/Menu.unity
     guid: 8cda47de885348f4198e6083f309e4a4
   - enabled: 1
-    path: Assets/Scenes/GamePrimary.unity
+    path: Assets/Scenes/Not relevant Scenes/GamePrimary.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/mega looser.unity
+    path: Assets/Scenes/Menus/mega looser.unity
     guid: b9b335f5c5189ce4a824a01a99c8f5f8
   - enabled: 1
-    path: Assets/Scenes/loser.unity
+    path: Assets/Scenes/Menus/loser.unity
     guid: 57c2fb271a8bbb249a6b9f6cde20f352
   - enabled: 1
-    path: Assets/Scenes/Winner.unity
+    path: Assets/Scenes/Menus/Winner.unity
     guid: 5857045d79e8193458e12f5e3f8ae5f8
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Not relevant Scenes/SampleScene.unity
     guid: 054a0b85c76f3ec4f970766b307cfc83
   - enabled: 1
     path: Assets/Scenes/Level Primary.unity

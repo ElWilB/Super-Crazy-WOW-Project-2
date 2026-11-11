@@ -76,6 +76,7 @@ public class PlayerController : MonoBehaviour
         // Jump check
         if (jumpAction.action.WasPressedThisFrame() && controller.isGrounded)
         {
+            WaitForSeconds(3)
             playerVelocity.y = jumpVelocity;
         }
 
