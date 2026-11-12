@@ -56,6 +56,11 @@ public class MoveTest : MonoBehaviour
 
     void UpdateAnimationState()
     {
+
+        if (CatchPlayer.instance.isCaught == true)
+        {
+            animator.Play("EnemyPoint");
+        }
         if (enemyWalking == true)
             {
                 animator.Play("EnemyWalk");
