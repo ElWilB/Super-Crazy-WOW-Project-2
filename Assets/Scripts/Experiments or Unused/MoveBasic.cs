@@ -10,7 +10,7 @@ public class MoveTest : MonoBehaviour
     public Animator animator;
     private bool isFacingRight;
     private bool enemyWalking;
-    public bool facesRightByDefault;
+
 
     public Vector3 pointB;
     public float timeDelay = 3f;
@@ -31,18 +31,10 @@ public class MoveTest : MonoBehaviour
             enemyWalking = false;
             yield return new WaitForSeconds(timeDelay);
             enemyWalking = true;
-            if (spriteRenderer.flipX == true)
-                spriteRenderer.flipX = false;
-            else if (spriteRenderer.flipX == false)
-                spriteRenderer.flipX = true;
             yield return StartCoroutine(MoveObject(transform, pointA, pointB, 3.0f));
             enemyWalking = false;
             yield return new WaitForSeconds(timeDelay);
             enemyWalking = true;
-            if (spriteRenderer.flipX == false)
-                spriteRenderer.flipX = true;
-            else if (spriteRenderer.flipX == true)
-                spriteRenderer.flipX = false;
             yield return StartCoroutine(MoveObject(transform, pointB, pointA, 3.0f));
             enemyWalking = false;
 
@@ -53,6 +45,7 @@ public class MoveTest : MonoBehaviour
     {
         var i = 0.0f;
         var rate = moveSpeed / time;
+        transform.Rotate(0, 180, 0);
         while (i < 1.0f)
         {
                 i += Time.deltaTime * rate;

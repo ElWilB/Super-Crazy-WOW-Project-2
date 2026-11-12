@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.ProBuilder.MeshOperations;
@@ -9,6 +10,9 @@ public class PlayerController : MonoBehaviour
     public float gravityValue = Physics.gravity.y;
     public float jumpVelocity = 5f;
     private bool isMoving = false;
+    public float startTime;
+    public float delayTime;
+    private bool canMove = true;
 
     public CharacterController controller;
     private Vector3 playerVelocity;
@@ -70,20 +74,33 @@ public class PlayerController : MonoBehaviour
         }
 
         // Convert input to Vector3
-        Vector3 move = new Vector3(input.x, 0, 0);
-        move = Vector3.ClampMagnitude(move, 1f);
+            Vector3 move = new Vector3(input.x, 0, 0);
+            move = Vector3.ClampMagnitude(move, 1f);
+
 
         // Jump check
         if (jumpAction.action.WasPressedThisFrame() && controller.isGrounded)
         {
-            WaitForSeconds(3)
-            playerVelocity.y = jumpVelocity;
+            StartCoroutine(Jump());
         }
 
         // Apply all movement
-        Vector3 finalMove = (move * playerSpeed) + (playerVelocity.y * Vector3.up);
-        controller.Move(finalMove * Time.deltaTime);
 
+        if (canMove == true)
+        {
+            Vector3 finalMove = (move * playerSpeed) + (playerVelocity.y * Vector3.up);
+            controller.Move(finalMove * Time.deltaTime);
+        }
+
+    }
+
+    IEnumerator Jump()
+    {
+        canMove = false;
+        animator.Play("JumpPrepare");
+        yield return new WaitForSeconds(delayTime);
+        canMove = true;
+        playerVelocity.y = jumpVelocity;
     }
 
     void UpdateAnimationStates()
@@ -98,16 +115,19 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        if (controller.isGrounded == false)
-            animator.Play("Jump");
-        else if (controller.velocity.magnitude > 0.1f)
+        if (canMove == true)
         {
-            animator.Play("Walk");
-        }
-        else
-        {
-            animator.Play("Idle");
-        }
+            if (controller.isGrounded == false)
+                animator.Play("Jump");
+            else if (controller.velocity.magnitude > 0.1f)
+            {
+                animator.Play("Walk");
+            }
+            else
+            {
+                animator.Play("Idle");
+            }
 
+        }
     }
 }
