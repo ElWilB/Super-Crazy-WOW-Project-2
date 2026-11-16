@@ -9,7 +9,9 @@ public class MoveTest : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public Animator animator;
     private bool isFacingRight;
-    private bool enemyWalking;
+    public bool enemyWalking;
+    
+        public static MoveTest instance;
 
 
     public Vector3 pointB;
@@ -56,11 +58,6 @@ public class MoveTest : MonoBehaviour
 
     void UpdateAnimationState()
     {
-
-        if (CatchPlayer.instance.isCaught == true)
-        {
-            animator.Play("EnemyPoint");
-        }
         if (enemyWalking == true)
             {
                 animator.Play("EnemyWalk");

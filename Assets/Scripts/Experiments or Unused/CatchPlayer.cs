@@ -6,10 +6,10 @@ using static UnityEngine.Rendering.DebugUI;
 public class CatchPlayer : MonoBehaviour
 {
     public int timeToCatch = 0;
-    public bool withinSight = false;
+    public int withinSight = 0;
     private int catchRate = 1;
     public string playerTag = "Player";
-    public bool isCaught = true;
+    public int LoseScene;
 
     public static CatchPlayer instance;
 
@@ -18,37 +18,36 @@ public class CatchPlayer : MonoBehaviour
     {
         if (other.CompareTag(playerTag))
         {
-            withinSight = true;
+            withinSight = 1;
  
         }
     }
 
         void OnTriggerExit(Collider other)
     {
-        withinSight = false;
+        withinSight = 0;
     }
 
     void Update()
     {
-        if (withinSight == true)
+        if (withinSight == 1)
             if (timeToCatch == 400)
             {
-
-
+                StartCoroutine(EndGame());
             }
             else
             {
                 timeToCatch += 1;
             }
-        if (withinSight == false)
+        if (withinSight == 0)
         {
             timeToCatch = 0;
         }
     }
 
-    IEnumerator Start()
+    IEnumerator EndGame()
     {
-        yield return new WaitForSeconds(1);
-        SceneManager.LoadScene(3);
+        yield return new WaitForSeconds(0);
+        SceneFader.Instance.LoadScene("3");
     }
 }
