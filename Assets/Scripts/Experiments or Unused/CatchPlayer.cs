@@ -9,7 +9,7 @@ public class CatchPlayer : MonoBehaviour
     public int withinSight = 0;
     private int catchRate = 1;
     public string playerTag = "Player";
-    public int LoseScene;
+    public int loseScene = 3;
 
     public static CatchPlayer instance;
 
@@ -48,6 +48,6 @@ public class CatchPlayer : MonoBehaviour
     IEnumerator EndGame()
     {
         yield return new WaitForSeconds(0);
-        SceneFader.Instance.LoadScene("3");
+        SceneManager.LoadScene(loseScene);
     }
 }
