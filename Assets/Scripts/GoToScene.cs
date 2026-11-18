@@ -3,10 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class GoToScene : MonoBehaviour
 {
-   public void LoadScenePrimary(int index)
+    public void LoadScenePrimary(int index)
     {
         SceneManager.LoadScene(index);
         GameManager.instance.currentLives = 1;
         GameManager.instance.goldAmount = 0;
+        GameManager.instance.playerCanMove = true;
+        GameManager.instance.enemyPoint = false;
     }
 }

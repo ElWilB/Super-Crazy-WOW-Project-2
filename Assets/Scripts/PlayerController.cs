@@ -12,7 +12,9 @@ public class PlayerController : MonoBehaviour
     private bool isMoving = false;
     public float startTime;
     public float delayTime;
-    private bool canMove = true;
+    public bool canMove = true;
+
+    public static PlayerController instance;
 
     public CharacterController controller;
     private Vector3 playerVelocity;
@@ -86,7 +88,7 @@ public class PlayerController : MonoBehaviour
 
         // Apply all movement
 
-        if (canMove == true)
+        if (GameManager.instance.playerCanMove == true)
         {
             Vector3 finalMove = (move * playerSpeed) + (playerVelocity.y * Vector3.up);
             controller.Move(finalMove * Time.deltaTime);
@@ -96,10 +98,10 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator Jump()
     {
-        canMove = false;
+        GameManager.instance.playerCanMove = false;
         animator.Play("JumpPrepare");
         yield return new WaitForSeconds(delayTime);
-        canMove = true;
+        GameManager.instance.playerCanMove = true;
         playerVelocity.y = jumpVelocity;
     }
 
@@ -114,8 +116,10 @@ public class PlayerController : MonoBehaviour
             spriteRenderer.flipX = false;
         }
 
-
-        if (canMove == true)
+        if (GameManager.instance.playerCanMove == false)
+            if (GameManager.instance.enemyPoint == true)
+                    animator.Play("Caught");
+        if (GameManager.instance.playerCanMove == true)
         {
             if (controller.isGrounded == false)
                 animator.Play("Jump");

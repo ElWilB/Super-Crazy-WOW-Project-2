@@ -45,20 +45,35 @@ public class MoveTest : MonoBehaviour
 
     IEnumerator MoveObject(Transform thisTransform, Vector3 startPos, Vector3 endPos, float time)
     {
-        var i = 0.0f;
-        var rate = moveSpeed / time;
-        transform.Rotate(0, 180, 0);
-        while (i < 1.0f)
         {
-                i += Time.deltaTime * rate;
-                thisTransform.position = Vector3.Lerp(startPos, endPos, i);
-            yield return null;
+            var i = 0.0f;
+            var rate = moveSpeed / time;
+            transform.Rotate(0, 180, 0);
+            while (i < 1.0f)
+            {
+                if (GameManager.instance.enemyPoint == true)
+                {
+                    i += 1;
+                }
+                else
+                {
+                    i += Time.deltaTime * rate;
+                    thisTransform.position = Vector3.Lerp(startPos, endPos, i);
+                    yield return null;
+                }
+            }
+
         }
     }
 
     void UpdateAnimationState()
     {
-        if (enemyWalking == true)
+
+        if (GameManager.instance.enemyPoint == true)
+        {
+            animator.Play("EnemyCaught");
+        }
+        else if (enemyWalking == true)
             {
                 animator.Play("EnemyWalk");
             }

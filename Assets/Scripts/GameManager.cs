@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     public int currentLives = 3;
     public int maxLives = 5;
     public int goldAmount = 0;
+    public bool playerCanMove = true;
+    public bool enemyPoint = false;
 
 
     // This is also stuff to make the GameManager work. Don't touch it!

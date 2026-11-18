@@ -33,6 +33,7 @@ public class CatchPlayer : MonoBehaviour
         if (withinSight == 1)
             if (timeToCatch == 400)
             {
+                timeToCatch += 400;
                 StartCoroutine(EndGame());
             }
             else
@@ -47,7 +48,13 @@ public class CatchPlayer : MonoBehaviour
 
     IEnumerator EndGame()
     {
-        yield return new WaitForSeconds(0);
+        print("Got to end scene!");
+        GameManager.instance.playerCanMove = false;
+        print("Got to point scene!");
+        GameManager.instance.enemyPoint = true;
+        print("Got to player move stop!");
+        print("Breakpoint");
+        yield return new WaitForSeconds(1);
         SceneManager.LoadScene(loseScene);
     }
 }
