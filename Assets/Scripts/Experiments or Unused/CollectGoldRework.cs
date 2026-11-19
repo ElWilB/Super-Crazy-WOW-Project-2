@@ -52,11 +52,13 @@ public class CollectGoldRework : MonoBehaviour
     {
         CollectText.enabled = true;
         GameManager.instance.playerCanMove = false;
+        GameManager.instance.jumpEnabled = false;
         yield return new WaitForSeconds(pickupTime);
         GameManager.instance.goldAmount += value;
         UIManager.instance.scoreText.text = GameManager.instance.goldAmount.ToString();
         CollectText.enabled = false;
         GameManager.instance.playerCanMove = true;
+        GameManager.instance.jumpEnabled = true;
         print("Collected [1] gold!");
         Destroy(this.gameObject);
         UIText.enabled = false;
@@ -68,11 +70,13 @@ public class CollectGoldRework : MonoBehaviour
     {
         CollectText.enabled = true;
         GameManager.instance.playerCanMove = false;
+        GameManager.instance.jumpEnabled = false;
         yield return new WaitForSeconds(pickupTime);
         GameManager.instance.goldAmount += value;
         UIManager.instance.scoreText.text = GameManager.instance.goldAmount.ToString();
         CollectText.enabled = false;
         GameManager.instance.playerCanMove = true;
+        GameManager.instance.jumpEnabled = true;
         Destroy(this.gameObject);
         UIText.enabled = false;
     }

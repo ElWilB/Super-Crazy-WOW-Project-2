@@ -9,7 +9,6 @@ public class PlayerController : MonoBehaviour
     public float playerSpeed = 5.0f;
     public float gravityValue = Physics.gravity.y;
     public float jumpVelocity = 5f;
-    private bool isMoving = false;
     public float startTime;
     public float delayTime;
     public bool canMove = true;
@@ -81,7 +80,7 @@ public class PlayerController : MonoBehaviour
 
 
         // Jump check
-        if (jumpAction.action.WasPressedThisFrame() && controller.isGrounded)
+        if (jumpAction.action.WasPressedThisFrame() && controller.isGrounded && GameManager.instance.jumpEnabled)
         {
             StartCoroutine(Jump());
         }
@@ -98,9 +97,11 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator Jump()
     {
+        GameManager.instance.jumpEnabled = false;
         GameManager.instance.playerCanMove = false;
         animator.Play("JumpPrepare");
         yield return new WaitForSeconds(delayTime);
+        GameManager.instance.jumpEnabled = true;
         GameManager.instance.playerCanMove = true;
         playerVelocity.y = jumpVelocity;
     }

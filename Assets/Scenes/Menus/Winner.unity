@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 73214356}
   - component: {fileID: 73214359}
   - component: {fileID: 73214358}
-  - component: {fileID: 73214357}
+  - component: {fileID: 73214360}
   m_Layer: 5
   m_Name: Gold12
   m_TagString: Untagged
@@ -147,30 +147,16 @@ RectTransform:
   m_GameObject: {fileID: 73214355}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.4082, y: 2.5516, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 307556035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 220.6, y: -148}
+  m_AnchoredPosition: {x: 606, y: -253}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &73214357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 73214355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c8fce70825a10b4e9dfe8d3a56fbe92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AppearGoldTotal
-  goldImage: {fileID: 73214358}
-  goldRequired: 12
 --- !u!114 &73214358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,6 +195,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 73214355}
   m_CullTransparentMesh: 1
+--- !u!114 &73214360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73214355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3df9d8aa9d460e645a0c62945aab8fc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AppearGoldTotalEnding
+  goldImage: {fileID: 73214358}
+  goldRequired: 12
 --- !u!1 &155332666
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 155332667}
   - component: {fileID: 155332670}
   - component: {fileID: 155332669}
-  - component: {fileID: 155332668}
+  - component: {fileID: 155332671}
   m_Layer: 5
   m_Name: Gold4
   m_TagString: Untagged
@@ -237,30 +237,16 @@ RectTransform:
   m_GameObject: {fileID: 155332666}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.4082, y: 2.5516, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 307556035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 215.5, y: 54.9}
+  m_AnchoredPosition: {x: 599, y: 90}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &155332668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 155332666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c8fce70825a10b4e9dfe8d3a56fbe92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AppearGoldTotal
-  goldImage: {fileID: 155332669}
-  goldRequired: 4
 --- !u!114 &155332669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -299,6 +285,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 155332666}
   m_CullTransparentMesh: 1
+--- !u!114 &155332671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155332666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3df9d8aa9d460e645a0c62945aab8fc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AppearGoldTotalEnding
+  goldImage: {fileID: 155332669}
+  goldRequired: 4
 --- !u!1 &307556031
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,7 +350,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -431,7 +431,7 @@ GameObject:
   - component: {fileID: 378552067}
   - component: {fileID: 378552070}
   - component: {fileID: 378552069}
-  - component: {fileID: 378552068}
+  - component: {fileID: 378552071}
   m_Layer: 5
   m_Name: Gold9
   m_TagString: Untagged
@@ -448,30 +448,16 @@ RectTransform:
   m_GameObject: {fileID: 378552066}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.4082, y: 2.5516, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 307556035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 264.2, y: -86.5}
+  m_AnchoredPosition: {x: 457, y: -102}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &378552068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 378552066}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c8fce70825a10b4e9dfe8d3a56fbe92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AppearGoldTotal
-  goldImage: {fileID: 378552069}
-  goldRequired: 9
 --- !u!114 &378552069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -510,6 +496,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 378552066}
   m_CullTransparentMesh: 1
+--- !u!114 &378552071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378552066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3df9d8aa9d460e645a0c62945aab8fc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AppearGoldTotalEnding
+  goldImage: {fileID: 378552069}
+  goldRequired: 9
 --- !u!1 &655684606
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,7 +541,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UIManager
   scoreText: {fileID: 1675427543}
   liveText: {fileID: 1352684655}
-  resultText: {fileID: 1443748311}
 --- !u!4 &655684608
 Transform:
   m_ObjectHideFlags: 0
@@ -568,7 +567,7 @@ GameObject:
   - component: {fileID: 685982286}
   - component: {fileID: 685982289}
   - component: {fileID: 685982288}
-  - component: {fileID: 685982287}
+  - component: {fileID: 685982290}
   m_Layer: 5
   m_Name: Gold1
   m_TagString: Untagged
@@ -585,30 +584,16 @@ RectTransform:
   m_GameObject: {fileID: 685982285}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.4082, y: 2.5516, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 307556035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 258, y: 102}
+  m_AnchoredPosition: {x: 492, y: 237}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &685982287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 685982285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c8fce70825a10b4e9dfe8d3a56fbe92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AppearGoldTotal
-  goldImage: {fileID: 685982288}
-  goldRequired: 1
 --- !u!114 &685982288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -616,7 +601,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 685982285}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -647,6 +632,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 685982285}
   m_CullTransparentMesh: 1
+--- !u!114 &685982290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685982285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3df9d8aa9d460e645a0c62945aab8fc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AppearGoldTotalEnding
+  goldImage: {fileID: 685982288}
+  goldRequired: 1
 --- !u!1 &939409354
 GameObject:
   m_ObjectHideFlags: 0
@@ -658,7 +657,7 @@ GameObject:
   - component: {fileID: 939409355}
   - component: {fileID: 939409358}
   - component: {fileID: 939409357}
-  - component: {fileID: 939409356}
+  - component: {fileID: 939409359}
   m_Layer: 5
   m_Name: Gold8
   m_TagString: Untagged
@@ -675,30 +674,16 @@ RectTransform:
   m_GameObject: {fileID: 939409354}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.4082, y: 2.5516, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 307556035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 220.3, y: -53.2}
+  m_AnchoredPosition: {x: 605, y: -63}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &939409356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 939409354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c8fce70825a10b4e9dfe8d3a56fbe92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AppearGoldTotal
-  goldImage: {fileID: 939409357}
-  goldRequired: 8
 --- !u!114 &939409357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -737,6 +722,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 939409354}
   m_CullTransparentMesh: 1
+--- !u!114 &939409359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939409354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3df9d8aa9d460e645a0c62945aab8fc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AppearGoldTotalEnding
+  goldImage: {fileID: 939409357}
+  goldRequired: 8
 --- !u!1 &1049395850
 GameObject:
   m_ObjectHideFlags: 0
@@ -764,14 +763,14 @@ RectTransform:
   m_GameObject: {fileID: 1049395850}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalScale: {x: 1.92656, y: 2.04128, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 307556035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -85.9, y: 25.4}
+  m_AnchoredPosition: {x: -1457, y: 25.4}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1049395852
@@ -823,7 +822,7 @@ GameObject:
   - component: {fileID: 1167069223}
   - component: {fileID: 1167069226}
   - component: {fileID: 1167069225}
-  - component: {fileID: 1167069224}
+  - component: {fileID: 1167069227}
   m_Layer: 5
   m_Name: Gold3
   m_TagString: Untagged
@@ -840,30 +839,16 @@ RectTransform:
   m_GameObject: {fileID: 1167069222}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.4082, y: 2.5516, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 307556035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 258.6, y: 66.7}
+  m_AnchoredPosition: {x: 470, y: 161}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1167069224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1167069222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c8fce70825a10b4e9dfe8d3a56fbe92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AppearGoldTotal
-  goldImage: {fileID: 1167069225}
-  goldRequired: 3
 --- !u!114 &1167069225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -871,7 +856,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1167069222}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -902,6 +887,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1167069222}
   m_CullTransparentMesh: 1
+--- !u!114 &1167069227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167069222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3df9d8aa9d460e645a0c62945aab8fc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AppearGoldTotalEnding
+  goldImage: {fileID: 1167069225}
+  goldRequired: 3
 --- !u!1 &1169769403
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,7 +912,7 @@ GameObject:
   - component: {fileID: 1169769404}
   - component: {fileID: 1169769407}
   - component: {fileID: 1169769406}
-  - component: {fileID: 1169769405}
+  - component: {fileID: 1169769408}
   m_Layer: 5
   m_Name: Gold2
   m_TagString: Untagged
@@ -930,30 +929,16 @@ RectTransform:
   m_GameObject: {fileID: 1169769403}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.4082, y: 2.5516, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 307556035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 216.9, y: 84.4}
+  m_AnchoredPosition: {x: 590, y: 189}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1169769405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1169769403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c8fce70825a10b4e9dfe8d3a56fbe92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AppearGoldTotal
-  goldImage: {fileID: 1169769406}
-  goldRequired: 2
 --- !u!114 &1169769406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -961,7 +946,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1169769403}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -992,6 +977,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1169769403}
   m_CullTransparentMesh: 1
+--- !u!114 &1169769408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169769403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3df9d8aa9d460e645a0c62945aab8fc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AppearGoldTotalEnding
+  goldImage: {fileID: 1169769406}
+  goldRequired: 2
 --- !u!1 &1296370707
 GameObject:
   m_ObjectHideFlags: 0
@@ -1082,7 +1081,7 @@ GameObject:
   - component: {fileID: 1334072944}
   - component: {fileID: 1334072947}
   - component: {fileID: 1334072946}
-  - component: {fileID: 1334072945}
+  - component: {fileID: 1334072948}
   m_Layer: 5
   m_Name: Gold5
   m_TagString: Untagged
@@ -1099,30 +1098,16 @@ RectTransform:
   m_GameObject: {fileID: 1334072943}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.4082, y: 2.5516, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 307556035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 259.8, y: 26.9}
+  m_AnchoredPosition: {x: 456, y: 55}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1334072945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1334072943}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c8fce70825a10b4e9dfe8d3a56fbe92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AppearGoldTotal
-  goldImage: {fileID: 1334072946}
-  goldRequired: 5
 --- !u!114 &1334072946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1161,6 +1146,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1334072943}
   m_CullTransparentMesh: 1
+--- !u!114 &1334072948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334072943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3df9d8aa9d460e645a0c62945aab8fc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AppearGoldTotalEnding
+  goldImage: {fileID: 1334072946}
+  goldRequired: 5
 --- !u!1 &1350090184
 GameObject:
   m_ObjectHideFlags: 0
@@ -1172,7 +1171,7 @@ GameObject:
   - component: {fileID: 1350090185}
   - component: {fileID: 1350090188}
   - component: {fileID: 1350090187}
-  - component: {fileID: 1350090186}
+  - component: {fileID: 1350090189}
   m_Layer: 5
   m_Name: Gold11
   m_TagString: Untagged
@@ -1189,30 +1188,16 @@ RectTransform:
   m_GameObject: {fileID: 1350090184}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.4082, y: 2.5516, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 307556035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 265.2, y: -129.6}
+  m_AnchoredPosition: {x: 454, y: -184}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1350090186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1350090184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c8fce70825a10b4e9dfe8d3a56fbe92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AppearGoldTotal
-  goldImage: {fileID: 1350090187}
-  goldRequired: 11
 --- !u!114 &1350090187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1251,6 +1236,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1350090184}
   m_CullTransparentMesh: 1
+--- !u!114 &1350090189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350090184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3df9d8aa9d460e645a0c62945aab8fc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AppearGoldTotalEnding
+  goldImage: {fileID: 1350090187}
+  goldRequired: 11
 --- !u!1 &1352684652
 GameObject:
   m_ObjectHideFlags: 0
@@ -1278,14 +1277,14 @@ RectTransform:
   m_GameObject: {fileID: 1352684652}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.2756, y: 2, z: 2}
+  m_LocalScale: {x: 5.4800997, y: 5.1032, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 307556035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -890, y: -114}
+  m_AnchoredPosition: {x: -4715, y: -114}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1352684654
@@ -1401,7 +1400,7 @@ GameObject:
   - component: {fileID: 1411020955}
   - component: {fileID: 1411020958}
   - component: {fileID: 1411020957}
-  - component: {fileID: 1411020956}
+  - component: {fileID: 1411020959}
   m_Layer: 5
   m_Name: Gold10
   m_TagString: Untagged
@@ -1418,30 +1417,16 @@ RectTransform:
   m_GameObject: {fileID: 1411020954}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.4082, y: 2.5516, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 307556035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 221.3, y: -111.1}
+  m_AnchoredPosition: {x: 611, y: -144}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1411020956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1411020954}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c8fce70825a10b4e9dfe8d3a56fbe92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AppearGoldTotal
-  goldImage: {fileID: 1411020957}
-  goldRequired: 10
 --- !u!114 &1411020957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1480,6 +1465,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411020954}
   m_CullTransparentMesh: 1
+--- !u!114 &1411020959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411020954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3df9d8aa9d460e645a0c62945aab8fc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AppearGoldTotalEnding
+  goldImage: {fileID: 1411020957}
+  goldRequired: 10
 --- !u!1 &1443748310
 GameObject:
   m_ObjectHideFlags: 0
@@ -1518,9 +1517,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '       loser
-
-'
+  m_text: Do better.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1609,14 +1606,14 @@ RectTransform:
   m_GameObject: {fileID: 1443748310}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 2}
+  m_LocalScale: {x: 3.6123, y: 3.8274, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 307556035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -241, y: -46.7}
+  m_AnchoredPosition: {x: -2203, y: -46.7}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1484458573
@@ -1630,7 +1627,7 @@ GameObject:
   - component: {fileID: 1484458574}
   - component: {fileID: 1484458577}
   - component: {fileID: 1484458576}
-  - component: {fileID: 1484458575}
+  - component: {fileID: 1484458578}
   m_Layer: 5
   m_Name: Gold6
   m_TagString: Untagged
@@ -1647,30 +1644,16 @@ RectTransform:
   m_GameObject: {fileID: 1484458573}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.4082, y: 2.5516, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 307556035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 215.5, y: 1.8}
+  m_AnchoredPosition: {x: 599, y: 27}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1484458575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1484458573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c8fce70825a10b4e9dfe8d3a56fbe92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AppearGoldTotal
-  goldImage: {fileID: 1484458576}
-  goldRequired: 6
 --- !u!114 &1484458576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1709,6 +1692,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1484458573}
   m_CullTransparentMesh: 1
+--- !u!114 &1484458578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484458573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3df9d8aa9d460e645a0c62945aab8fc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AppearGoldTotalEnding
+  goldImage: {fileID: 1484458576}
+  goldRequired: 6
 --- !u!1 &1517518445
 GameObject:
   m_ObjectHideFlags: 0
@@ -1737,7 +1734,7 @@ RectTransform:
   m_GameObject: {fileID: 1517518445}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 12, z: 6}
+  m_LocalScale: {x: 12.041, y: 30.6192, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 307556035}
@@ -1906,14 +1903,14 @@ RectTransform:
   m_GameObject: {fileID: 1552166583}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.4082, y: 2.5516, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 307556035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 504.4, y: 102}
+  m_AnchoredPosition: {x: 1338, y: 102}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1583616238
@@ -2064,7 +2061,7 @@ GameObject:
   - component: {fileID: 1596094364}
   - component: {fileID: 1596094367}
   - component: {fileID: 1596094366}
-  - component: {fileID: 1596094365}
+  - component: {fileID: 1596094368}
   m_Layer: 5
   m_Name: Gold7
   m_TagString: Untagged
@@ -2081,30 +2078,16 @@ RectTransform:
   m_GameObject: {fileID: 1596094363}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.4082, y: 2.5516, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 307556035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 259.6, y: -25.6}
+  m_AnchoredPosition: {x: 462, y: -15}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1596094365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1596094363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c8fce70825a10b4e9dfe8d3a56fbe92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AppearGoldTotal
-  goldImage: {fileID: 1596094366}
-  goldRequired: 7
 --- !u!114 &1596094366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2143,6 +2126,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1596094363}
   m_CullTransparentMesh: 1
+--- !u!114 &1596094368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596094363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3df9d8aa9d460e645a0c62945aab8fc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AppearGoldTotalEnding
+  goldImage: {fileID: 1596094366}
+  goldRequired: 7
 --- !u!1 &1601542609
 GameObject:
   m_ObjectHideFlags: 0
@@ -2297,14 +2294,14 @@ RectTransform:
   m_GameObject: {fileID: 1675427541}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 2}
+  m_LocalScale: {x: 3.6123, y: 3.8274, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 307556035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -22.9, y: 22.9}
+  m_AnchoredPosition: {x: -2194, y: 22.9}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1675427543
@@ -2436,14 +2433,14 @@ RectTransform:
   m_GameObject: {fileID: 1682145899}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 2}
+  m_LocalScale: {x: 3.6123, y: 3.8274, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 307556035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -183.9, y: 25.5}
+  m_AnchoredPosition: {x: -2011, y: 25.5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1682145901
@@ -2619,7 +2616,7 @@ RectTransform:
   m_GameObject: {fileID: 1800898787}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 8.0045, y: 4.217369, z: 1}
+  m_LocalScale: {x: 19.276438, y: 10.761039, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 307556035}

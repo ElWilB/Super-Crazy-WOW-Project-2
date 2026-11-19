@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     public int goldAmount = 0;
     public bool playerCanMove = true;
     public bool enemyPoint = false;
+    public int finalGoldAmount = 0;
+    public bool jumpEnabled = true;
 
 
     // This is also stuff to make the GameManager work. Don't touch it!

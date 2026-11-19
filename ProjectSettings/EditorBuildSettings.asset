@@ -32,6 +32,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menus/Introductory Sequence.unity
     guid: 583d333d98dc54d4b9d16873a82aaf99
+  - enabled: 1
+    path: Assets/Scenes/Menus/LoseWinScene.unity
+    guid: 4c58e26b2f1691940a4f38d801edb7c9
+  - enabled: 1
+    path: Assets/Scenes/Menus/NeutralScene.unity
+    guid: 0734fac7ce6ee4f4a96ae6e47448dab0
+  - enabled: 1
+    path: Assets/Scenes/Menus/FullWin.unity
+    guid: 97d4f54e131cc8a4294e13f0ff955558
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
